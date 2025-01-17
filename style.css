@@ -1,0 +1,1397 @@
+
+
+
+/***********************************************************/
+/***********************RESPONSIVE***********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Font', sans-serif;
+}
+
+@font-face {
+    font-family: 'Font';
+    src: url('game_of_squids/Game Of Squids.ttf') format('truetype'),
+        url('game_of_squids/Game Of Squids.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, black, transparent);
+    color: white;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav .logo {
+    width: auto;
+    height: 55px;
+    margin-left: 10%;
+    filter: invert(1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-stretch: condensed;
+    /* Can be: normal, ultra-condensed, extra-condensed, condensed, expanded, extra-expanded, ultra-expanded */
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #d43b81;
+    border-radius: 10px;
+}
+
+nav ul li a:active {
+    background-color: white;
+    color: #d43b81;
+    border-radius: 10px;
+}
+
+nav button {
+    height: 50px;
+    /* Button height */
+    width: 150px;
+    /* Button width */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: none;
+    /* Remove default border */
+    text-align: center;
+    /* Center text inside the button */
+    text-decoration: none;
+    /* Remove any text decoration like underlines */
+    background-color: #e1e1e1;
+    /* Background color */
+    color: #d43b81;
+    /* Text color */
+    font-size: 13px;
+    /* Font size */
+    cursor: pointer;
+    /* Change cursor to pointer when hovering */
+    transition: background-color 0.3s ease;
+    position: relative;
+    margin: 0% 10% 0% 0%;
+}
+
+nav button:hover {
+    color: #e1e1e1;
+    /* Text color on hover */
+    background-color: #d43b81;
+
+}
+
+
+body {
+    background-color: rgb(10, 10, 10);
+    color: #e1e1e1;
+}
+
+body img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+}
+
+.content {
+
+    background-image: url('Images/1191374.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.content h2 {
+    position: relative;
+    top: 59%;
+    left: 17%;
+    font-size: 90px;
+    color: #fbfbfb;
+    font-weight: 100;
+}
+
+
+.page2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    color: #e1e1e1;
+    background-color: rgb(10, 10, 10);
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5% 10%;
+
+}
+
+.trailer {
+    display: flex;
+    overflow-y: hidden;
+    width: 80%;
+    height: auto;
+    position: relative;
+    margin: 0% 10%;
+
+}
+
+.trailer .lt{
+    
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    
+
+}
+
+
+
+.trailer .lt iframe {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border: none;
+    z-index: 10;
+    z-index: 1;
+    box-shadow: black 0px 0px 10px;
+}
+
+.trailer #sign {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    z-index: 0;
+    height: 80%;
+    width: auto;
+}
+
+
+.trailer .rt{
+    display: block;
+    width: 30%;
+    height: 100%;
+    margin: auto 0;
+    overflow-y: hidden;
+    
+}
+.trailer h1 {
+    padding: 0 auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+.trailer a #netflix {
+    width: 70%; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto;
+
+}
+
+#netflix:hover {
+    scale: 1.1;
+    
+    transition: 0.2s;
+}
+
+
+.games {
+    overflow: hidden;
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    padding: 5% 0%;
+}
+
+.games h1 {
+    color: #ffffff;
+    position: relative;
+    width: 30%;
+    font-size: 85px;
+    padding-left: 10%;
+    background-color: rgb(10, 10, 10);
+    top: 27.5%;
+    z-index: 0;
+}
+
+#sign {
+    opacity: 0.25;
+    filter: invert(1);
+    position: relative;
+    right: 15%;
+    width: 13%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+
+}
+
+
+
+
+.games .scrollbar .game p {
+    color: #e1e1e1;
+    position: relative;
+
+}
+
+.games .scrollbar {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 2.5) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+    overflow: hidden;
+    /* Hide the scrollbar */
+    overflow-x: scroll;
+    /* Keep vertical scrolling */
+    -ms-overflow-style: none;
+    /* Hide scrollbar in Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+.games .scrollbar a {
+    text-decoration: none;
+    color: #e1e1e1;
+}
+
+
+
+.games .scrollbar .game {
+    background-color: rgb(10, 10, 10);
+    width: 80%;
+    height: 95%;
+    scroll-snap-align: start;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+
+.games .scrollbar .game:hover {
+    transition: 0.25s ease-in-out;
+    transform: scale(1.1);
+}
+
+.games .scrollbar .game img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.games .scrollbar .game h2 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.games .scrollbar .game p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 100;
+    color: #e1e1e1cc;
+}
+
+.rules {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+
+}
+
+.rules h1 {
+    padding-top: 2%;
+    color: #e1e1e1;
+    position: relative;
+    width: 60%;
+    /* Adjust width if necessary */
+    font-size: 80px;
+    text-align: center;
+    /* Centers the text horizontally */
+    margin-left: auto;
+    /* Center the element horizontally within its parent */
+    margin-right: auto;
+    z-index: 1;
+}
+
+.rules .rule {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Centers the text horizontally */
+    margin-left: auto;
+    /* Center the element horizontally within its parent */
+    margin-right: auto;
+
+}
+
+.rules .rule p {
+    margin-left: 15%;
+    width: 70%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.gallery {
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    padding: 5% 0%;
+    box-shadow: black 0px 0px 10px;
+}
+
+.gallery h1 {
+    color: #e1e1e1;
+    position: relative;
+    width: 60%;
+    font-size: 80px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* General container for slideshows */
+.slideshow-container {
+    width: 200%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Flexbox container for the images */
+
+/* Styling for individual images */
+.slide {
+    width: 400px;
+    /* Each image takes the full width of the viewport */
+    height: 300px;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 10px;
+    /* Add some margin between the images */
+}
+
+.slideshow img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+
+#gallery1 {
+    display: flex;
+    width: auto; /* Correct multiplication for width */
+    animation: slideAnimation 30s infinite linear;
+    margin-top: 20px;
+}
+
+@keyframes slideAnimation {
+    from {
+        transform: translateX(calc(-200px * 1)); /* Adjust the initial translation */
+    }
+
+    to {
+        transform: translateX(calc(-200px * 9)); /* Adjust final translation for 9 items */
+    }
+}
+
+#gallery2 {
+    display: flex;
+    width: auto; /* This remains unchanged if the width is dynamic */
+    animation: slideAnimation2 40s infinite linear;
+    margin-top: 20px;
+}
+
+@keyframes slideAnimation2 {
+    from {
+        transform: translateX(calc(-200px * 9)); /* Correct initial translation for gallery2 */
+    }
+
+    to {
+        transform: translateX(0); /* Slides back to the start */
+    }
+}
+
+.quiz {
+    background-color: rgb(10, 10, 10);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.quiz h1 {
+    color: #e1e1e1;
+    position: relative;
+    width: 60%;
+    font-size: 80px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quiz p {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+}
+
+.quiz button {
+    height: 50px;
+    /* Button height */
+    width: 150px;
+    /* Button width */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: none;
+    /* Remove default border */
+    text-align: center;
+    /* Center text inside the button */
+    text-decoration: none;
+    /* Remove any text decoration like underlines */
+    background-color: #e1e1e1;
+    /* Background color */
+    color: #d43b81;
+    /* Text color */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Change cursor to pointer when hovering */
+    transition: background-color 0.3s ease;
+    position: relative;
+    margin: 2% 0% 5% 45%;
+}
+
+.quiz button:hover {
+    color: #e1e1e1;
+    /* Text color on hover */
+    background-color: #d43b81;
+    /* Darker shade on hover */
+}
+
+
+footer {
+    display: block;
+    position: relative;
+    height: auto;
+    background: linear-gradient(to top, #c11663, transparent);
+    width: 100%;
+    bottom: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 5%;
+}
+
+footer .upper {
+    position: relative;
+    height: 50%;
+    width: 80%;
+    background-color: #ffffff00;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+footer .upper img {
+    position: relative;
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+    filter: invert(1);
+    margin: 1% 0% 0% 0%;
+}
+
+footer .upper p {
+    font-family: 'Bebas Neue', sans-serif;
+    position: relative;
+    font-size: 20px;
+    color: #e1e1e1;
+
+}
+
+#stay-ready {
+    position: relative;
+    text-align: end;
+}
+
+button {
+    height: 50px;
+    /* Button height */
+    width: 150px;
+    /* Button width */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: none;
+    /* Remove default border */
+    text-align: center;
+    /* Center text inside the button */
+    text-decoration: none;
+    /* Remove any text decoration like underlines */
+    background-color: #e1e1e1;
+    /* Background color */
+    color: #d43b81;
+    /* Text color */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Change cursor to pointer when hovering */
+    transition: background-color 0.3s ease;
+    position: relative;
+
+}
+
+button:hover {
+    color: #e1e1e1;
+    /* Text color on hover */
+    background-color: #d43b81;
+    /* Darker shade on hover */
+}
+
+.lower {
+    position: relative;
+    height: 50%;
+    width: 80%;
+    background-color: #ffffff00;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: #e1e1e1 2px solid;
+
+}
+
+
+ul {
+    margin-top: 2%;
+    list-style: none;
+}
+
+.example-2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+}
+
+.example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+}
+
+.example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: rgb(10, 10, 10);
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+
+.example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.example-2 .icon-content a:hover {
+    color: white;
+}
+
+.example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover .filled {
+    height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"]~.tooltip {
+    background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"]~.tooltip {
+    background-color: #24262a;
+}
+
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"]~.tooltip {
+    background: linear-gradient(45deg,
+            #405de6,
+            #5b51db,
+            #b33ab4,
+            #c135b4,
+            #e1306c,
+            #fd1f1f);
+}
+
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"]~.tooltip {
+    background-color: #ff0000;
+}
+
+
+.lower .nv {
+    position: relative;
+    display: flex;
+    padding-bottom: 2%;
+
+}
+
+.lower .nv ul {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+
+}
+
+.lower .nv ul li {
+    margin-right: 3%;
+    text-decoration: none;
+    color: #e1e1e1;
+}
+
+.lower .nv ul li a {
+    text-decoration: none;
+    color: #e1e1e1;
+    font-size: 20px;
+}
+
+.lower .nv ul li a:hover {
+    color: #d43b81;
+    text-shadow: #000 0px 0px 4px;
+}
+
+.visit {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    margin-bottom: 5%;
+
+}
+
+.visit .lowerleft {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff00;
+    text-align: left;
+}
+
+.visit h1 {
+    position: relative;
+    color: #e1e1e1;
+    font-size: 20px;
+    text-align: left;
+}
+
+.visit a {
+    color: #e1e1e1;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+
+}
+
+.visit a:hover {
+    text-shadow: #000 0px 0px 4px;
+    color: #d43b81;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+
+}
+
+.visit .lowerright {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff00;
+    text-align: right;
+}
+
+.visit .lowerright img {
+    position: relative;
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    filter: invert(0);
+}
+
+#last {
+    position: relative;
+    text-align: center;
+    margin: 2%;
+}
+
+
+/* Media Queries ****************************************************/
+
+
+@media only screen and (max-width: 440px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    header {
+        height: 10vh;
+        max-width: 100%;
+    }
+
+    nav {
+        max-width: 100%;
+    }
+
+    nav .logo {
+        width: 100px;
+        height: auto;
+        margin: 10% 0% 0% 5%;
+
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        display: block;
+        margin: 10% 5% 0% 0%;
+    }
+
+    .content {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url('Images/1191374.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: -10vh 0% 0% 0%;
+
+    }
+
+    .content h2 {
+        position: absolute;
+        /* Position the <h2> absolutely within its parent */
+        top: 65%;
+        /* Center vertically within its parent */
+        left: 50%;
+        /* Center horizontally within its parent */
+        transform: translate(-50%, -50%);
+        /* Adjust the position so the element is truly centered */
+        font-size: 50px;
+        /* Set the font size to 50px */
+        margin: 0;
+        /* Reset default margin */
+        text-align: center;
+    }
+
+    .page2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        color: #e1e1e1;
+        background-color: rgb(10, 10, 10);
+        font-size: 7px;
+        font-weight: 600;
+        text-align: center;
+        padding: 5% 10%;
+
+    }
+
+    .trailer {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(10, 10, 10);
+        
+    }
+
+    .trailer .lt {
+        display: block;
+        width: 90%;
+        height: 60%;
+        position: relative;
+        top: 0%;
+        margin: 0 auto;
+    }
+
+    iframe{
+        aspect-ratio: 16/9;
+        
+    }
+
+    .trailer img{
+        display: none;
+    }
+
+    .trailer .rt{
+        
+        display: block;
+        width: 100%;
+    }
+
+    .rt h1{
+        margin: 5% auto;
+        font-size: 40px;
+    }
+    
+
+    .games {
+        
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+
+    }
+
+    .games h1 {
+        position: relative;
+        width: auto;
+        font-size: 40px;
+        font-weight: 600;
+        padding-left: 0%;
+        text-align: center;
+    }
+
+    #sign {
+        height: 0%;
+        width: 0%;
+    }   
+
+    .games .scrollbar {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 0%;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 1));
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+        overflow: hidden;
+        /* Hide the scrollbar */
+        overflow-x: scroll;
+        /* Keep vertical scrolling */
+        -ms-overflow-style: none;
+        /* Hide scrollbar in Internet Explorer 10+ */
+        scrollbar-width: none;
+    }
+
+
+    .scrollbar a {
+
+        text-decoration: none;
+        color: #e1e1e1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .games .scrollbar .game {
+        background-color: rgb(10, 10, 10);
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: start;
+        text-align: center;
+        border-radius: 10px;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .rules {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+
+    }
+
+    .rules h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rules .rule {
+        width: 90%;
+        height: 100%;
+        
+        background-color: rgb(10, 10, 10);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rules .rule p {
+        
+        width: 80%;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+    .gallery {
+        display: block;
+    ;
+    }
+
+    .gallery h1{
+        font-size: 40px;
+    }
+
+    .slideshow-container{
+        display: block;
+        justify-content: center;
+        width: 850%;
+
+    }
+
+
+
+    .quiz {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+        font-size: 20px;
+        
+    }
+
+    .quiz h1{
+        font-size: 40px;
+        margin-bottom: 5%;
+    }
+
+    .quiz p{
+        font-size: 20px;
+        margin-bottom: 5%;
+    }
+
+    .quiz button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        text-decoration: none;
+    }
+
+    footer {
+        display: block;
+        background: linear-gradient(to top, #c11663, rgb(10,10,10));
+        margin: 0%;
+        height: auto;
+    }
+
+
+    footer .upper{
+        display: block;
+        margin-top: 10%;
+
+    }
+
+    footer .upper img{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+        margin-right: auto;
+        
+    }
+
+
+    .upper h1{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .upper p{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #stay-ready{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .upper a{
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .upper a button{
+        margin: 5% 20%;
+        width: 60%;
+        
+
+    }
+
+    footer .lower{
+        display: block;
+
+    }
+
+    .lower .socials{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 5% 5%;
+
+    }
+
+    .lower .nv ul{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+
+    .lower .nv ul li{
+        text-align: center;
+    }
+
+
+    .lower .nv ul li a{
+        list-style: none;
+        font-size:15px;
+    }
+
+    .visit{
+        display: block;
+        margin: 5% 0%;
+    }
+
+    .visit .lowerleft{
+        display: block;
+        width: 100%;
+       text-align: center;
+    }
+
+
+    .visit h1{
+        width: 60%;
+        font-size: 15px;
+       text-align: center;
+       margin: 0 auto;
+    }
+
+    .lowerleft a{
+        text-align: center;
+    }
+
+    .lowerleft a p{
+        font-size: 15px;
+    }
+
+    .visit .lowerright{
+        display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    height: auto;
+    
+    }
+
+    .visit .lowerright img{
+        width: 70%;
+        height: auto;
+        margin: 5% auto;
+    }
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 440px) and (max-width: 1030px){
+
+    nav ul{
+        width: 50%;
+        margin: 0 auto;
+        justify-content: center;
+    } 
+
+    nav .logo {
+        width: auto;
+        height: 40px;
+        
+    }
+
+    .content{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: -10vh 0% 0% 0%;
+    }
+
+    .content h2 {
+        position: absolute;
+        /* Position the <h2> absolutely within its parent */
+        top: 65%;
+        /* Center vertically within its parent */
+        left: 50%;
+        /* Center horizontally within its parent */
+        transform: translate(-50%, -50%);
+        /* Adjust the position so the element is truly centered */
+        font-size: 100px;
+        /* Set the font size to 50px */
+        margin: 0;
+        /* Reset default margin */
+        text-align: center;
+    }
+
+    .trailer h1{
+        font-size: 50px;
+    }
+
+    #netflix{
+        width: 20%;
+        position: absolute;
+        height: auto;
+        right: 10%;
+        top: 135%;
+    }
+
+    .games {
+        
+
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+
+    }
+
+    .games h1{
+        font-size: 50px;
+        text-align: center;
+        width:100%;
+        background-color: transparent;
+    }
+
+    .games #sign {
+        opacity: 0.25;
+        filter: invert(1);
+        position: relative;
+        right: 25%;
+        width: 30%;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 1;
+
+    }   
+
+    .games .scrollbar {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 0%;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 1.25));
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+        overflow: hidden;
+        /* Hide the scrollbar */
+        overflow-x: scroll;
+        /* Keep vertical scrolling */
+        -ms-overflow-style: none;
+        /* Hide scrollbar in Internet Explorer 10+ */
+        scrollbar-width: none;
+    }
+
+    .gallery .slideshow-container .slideshow{
+        width: 200%;
+    }
+
+
+
+}
