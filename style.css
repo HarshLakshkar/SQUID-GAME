@@ -90,6 +90,7 @@ nav button {
     /* Change cursor to pointer when hovering */
     transition: background-color 0.3s ease;
     position: relative;
+    margin-right: 10%;
 }
 
 nav button:hover {
