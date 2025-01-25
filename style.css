@@ -64,6 +64,7 @@ nav ul li a:active {
 
 nav a{
     text-decoration: none;
+    margin-right: 10%;
 }
 
 nav button {
